@@ -1,0 +1,32 @@
+import '../typedef/ListNode.js';
+
+/**
+ * 数组转单链表
+ * @param {number[]} arr
+ * @returns {ListNode | null}
+ */
+function createListNode(arr) {
+  if (arr.length > 0) {
+    const head = createSingleListNode(arr[0]);
+    let pointer = head;
+    for (let i = 1; i < arr.length; i++) {
+      const next = createSingleListNode(arr[i]);
+      pointer.next = next;
+      pointer = next;
+    }
+    return head;
+  } else {
+    return null;
+  }
+}
+
+/**
+ *
+ * @param {number} val
+ * @returns {ListNode}
+ */
+function createSingleListNode(val) {
+  return {val: val, next: null};
+}
+
+export {createSingleListNode, createListNode};

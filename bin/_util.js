@@ -21,7 +21,7 @@ function createListNode(arr) {
 }
 
 /**
- *
+ * 创建单独的链表节点
  * @param {number} val
  * @returns {ListNode}
  */

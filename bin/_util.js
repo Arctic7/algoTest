@@ -1,4 +1,5 @@
 import '../typedef/ListNode.js';
+import '../typedef/HoriNode.js';
 
 /**
  * 数组转单链表
@@ -29,4 +30,13 @@ function createSingleListNode(val) {
   return {val: val, next: null};
 }
 
-export {createSingleListNode, createListNode};
+/**
+ * 创建带有next指针的Node
+ * @param {number} val
+ * @returns {HoriNode}
+ */
+function createHoriNode(val) {
+  return {val: val, left: null, right: null, next: null};
+}
+
+export {createSingleListNode, createListNode, createHoriNode};

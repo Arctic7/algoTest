@@ -1,5 +1,5 @@
 /**
- * @typedef Node
+ * @typedef HoriNode
  * @property {number} val
  * @property {Node | null} [left]
  * @property {Node | null} [right]

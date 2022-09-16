@@ -1,5 +1,6 @@
 import '../typedef/ListNode.js';
 import '../typedef/HoriNode.js';
+import '../typedef/TreeNode.js';
 
 /**
  * 数组转单链表
@@ -39,4 +40,13 @@ function createHoriNode(val) {
   return {val: val, left: null, right: null, next: null};
 }
 
-export {createSingleListNode, createListNode, createHoriNode};
+/**
+ * 创建单独的树节点
+ * @param {number} val
+ * @returns {TreeNode}
+ */
+function createTreeNode(val) {
+  return {val: val, left: null, right: null};
+}
+
+export {createSingleListNode, createListNode, createHoriNode, createTreeNode};

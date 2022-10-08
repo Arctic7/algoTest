@@ -6,7 +6,7 @@ var findMode = function(root) {
   const result = {prev: Number.NEGATIVE_INFINITY, prevCount: 0, majority: new Set(), majorityCount: 0};
   traverse(root, result);
   // 最后再做一次收尾
-  doClose(result);
+  doClose(result, Number.NEGATIVE_INFINITY);
   return Array.from(result.majority);
 };
 
@@ -22,7 +22,7 @@ function traverse(node, result) {
     if (curVal === prev) {
       result.prevCount++;
     } else {
-      doClose(result);
+      doClose(result, curVal);
     }
     traverse(node.right, result);
   }
@@ -30,8 +30,9 @@ function traverse(node, result) {
 
 /**
  * @param {{prev: number; prevCount: number; majority: Set<number>; majorityCount: number;}} result
+ * @param {number} curVal
  */
-function doClose(result) {
+function doClose(result, curVal) {
   const prev = result.prev;
   // 前一个值收尾
   if (result.prevCount > result.majorityCount) {

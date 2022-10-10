@@ -1,1 +1,1 @@
-console.log(new Date().getDay());
+console.log(1 < Number.POSITIVE_INFINITY);

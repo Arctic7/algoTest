@@ -1,4 +1,4 @@
-import '../typedef/TreeNode.js';
+import '../../typedef/TreeNode.js';
 import {createTreeNode} from './_util.js';
 
 /**

@@ -1,4 +1,4 @@
-import '../typedef/TreeNode.js';
+import '../../typedef/TreeNode.js';
 /**
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.

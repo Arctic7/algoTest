@@ -1,5 +1,5 @@
-import '../typedef/ListNode.js';
-import '../typedef/TreeNode.js';
+import '../../typedef/ListNode.js';
+import '../../typedef/TreeNode.js';
 import {createListNode} from './_util.js';
 
 /**

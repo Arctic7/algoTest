@@ -1,4 +1,4 @@
-import '../typedef/HoriNode.js';
+import '../../typedef/HoriNode.js';
 import {createHoriNode} from './_util.js';
 
 /**

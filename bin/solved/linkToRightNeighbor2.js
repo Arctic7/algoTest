@@ -1,5 +1,5 @@
 import '../../typedef/HoriNode.js';
-import {createHoriNode} from './_util.js';
+import {createHoriNode} from '../_util.js';
 
 /**
  * @param {HoriNode} root

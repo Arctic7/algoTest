@@ -1,6 +1,6 @@
 import '../../typedef/ListNode.js';
 import '../../typedef/TreeNode.js';
-import {createListNode} from './_util.js';
+import {createListNode} from '../_util.js';
 
 /**
  * @param {ListNode} head

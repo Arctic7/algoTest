@@ -1,6 +1,6 @@
-import '../../typedef/ListNode.js';
-import '../../typedef/HoriNode.js';
-import '../../typedef/TreeNode.js';
+import '../typedef/ListNode.js';
+import '../typedef/HoriNode.js';
+import '../typedef/TreeNode.js';
 
 /**
  * 数组转单链表

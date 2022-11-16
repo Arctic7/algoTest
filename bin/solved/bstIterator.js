@@ -1,5 +1,5 @@
 import '../../typedef/TreeNode.js';
-import {createTreeNode} from './_util.js';
+import {createTreeNode} from '../_util.js';
 
 /**
  * @param {TreeNode} root
